@@ -1,0 +1,16 @@
+name: Docker Example
+run-name: Build docker
+on: [push]
+
+jobs:
+  Building-Docker:
+    runs-on: ubuntu-latest
+    container:
+      image: docker
+    steps:
+
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Build docker
+        run: docker build .
