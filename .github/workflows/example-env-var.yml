@@ -1,5 +1,5 @@
-name: Environment Variable Example
 run-name: Echo some env vars
+name: Environment Variable Example
 on: [push]
 
 jobs:
